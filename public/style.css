@@ -1,0 +1,224 @@
+/* Importing Tailwind and Fonts */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f9;
+  font-family: 'Space Mono', monospace, 'Open Sans', sans-serif;
+  max-width: 760px;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+nav > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li > a,
+a {
+  text-decoration: none;
+  color: #db2777;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+nav > ul > li > a:hover,
+a:hover {
+  background-color: #fdf2f8;
+}
+
+/* Header and Titles */
+h1.title {
+  text-align: center;
+  margin: 1rem;
+  text-decoration: underline;
+  font-size: 2rem;
+  color: #111827;
+}
+
+/* Tutorial Info Section */
+div.tutorial-info {
+  border: 4px solid #d1d5db;
+  padding: 32px;
+  border-radius: 16px;
+  margin-top: 32px;
+  background-color: #f9fafb;
+}
+
+ol.tutorial-info {
+  font-size: 1.25rem;
+  padding-left: 32px;
+}
+
+.tutorial-info > li {
+  margin: 8px 0;
+}
+
+/* Main Content and Forms */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form.lg-form {
+  margin: 16px;
+  padding: 32px;
+  border: 4px solid #d1d5db;
+  min-width: 400px;
+  border-radius: 16px;
+  background-color: #f9fafb;
+}
+
+.lg-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.lg-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+}
+
+.lg-form input[type='submit'] {
+  background-color: #db2777;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lg-form input[type='submit']:hover {
+  background-color: #be185d;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #db2777;
+  background-color: #fff;
+}
+
+/* Table Styles */
+table {
+  margin-top: 32px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 4px solid #d1d5db;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #db2777;
+  color: #fff;
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+}
+
+thead th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+thead th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #fdf2f8;
+}
+
+tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+/* Profile Section */
+.profile {
+  min-width: 600px;
+  padding: 16px;
+  border: 4px solid #d1d5db;
+  border-radius: 16px;
+  margin-top: 32px;
+  background-color: #f9fafb;
+}
+
+.profile .title {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Flash Messages */
+div.messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.messages {
+  list-style: none;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+}
+
+ul.messages li {
+  padding: 8px 12px;
+  color: #fff;
+}
+
+.messages .error {
+  background-color: #f87171;
+}
+
+.messages .success {
+  background-color: #6ee7b7;
+}
+
+.messages .warning {
+  background-color: #fcd34d;
+}
+
+.messages .info {
+  background-color: #93c5fd;
+}
