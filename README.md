@@ -55,8 +55,7 @@ npm start
 
 ## Author
 
-- [**Truly Mittal**](https://trulymittal.com)
-
+- [**Shulin Agarwal**]
 ## Contribute
 
 You can fork this repo and send me a PR.
